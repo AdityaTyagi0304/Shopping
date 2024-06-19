@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shopingapp/widgets/popup_menu.dart';
 import '../models/product.dart';
+import '../widgets/popup_menu.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   final Product product;
@@ -11,6 +13,9 @@ class ProductDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(product.title),
+        actions: [
+          PopupMenu(),
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

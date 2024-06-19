@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import '../widgets/custom_bottomnavigation.dart';
 import '../widgets/product_item.dart';
-import '../data/products.dart'; // Assuming this file contains 'Products'
-import '../models/product.dart';// Assuming this file contains 'Product' class
+import '../data/products.dart'; //
+import '../models/product.dart';//
+import '../widgets/popup_menu.dart';
 import '../screens/cart_screen.dart';
 import '../widgets/custom_searchbar.dart';
+
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -79,6 +81,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Shopping App'),
+        actions: [
+          PopupMenu(),
+        ],
       ),
       body: Column(
         children: [

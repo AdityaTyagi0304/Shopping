@@ -1,0 +1,30 @@
+name: shopingapp
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/clothes_1.png
+    - assets/clothes_2.png
+    - assets/clothes_3.png
+    - assets/clothes_4.png
+    - assets/clothes_5.png
+    - assets/clothes_6.png
+    - assets/clothes_7.png
+    - assets/clothes_8.png
+
